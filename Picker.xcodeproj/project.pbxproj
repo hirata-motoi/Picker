@@ -21,6 +21,8 @@
 		84DF7951182FF40900D90F40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DF7933182FF40900D90F40 /* UIKit.framework */; };
 		84DF7959182FF40900D90F40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84DF7957182FF40900D90F40 /* InfoPlist.strings */; };
 		84DF795B182FF40900D90F40 /* PickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DF795A182FF40900D90F40 /* PickerTests.m */; };
+		84DF7965182FF85D00D90F40 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DF7964182FF85D00D90F40 /* MobileCoreServices.framework */; };
+		84DF7967182FF8F900D90F40 /* baby1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 84DF7966182FF8F900D90F40 /* baby1.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		84DF7956182FF40900D90F40 /* PickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PickerTests-Info.plist"; sourceTree = "<group>"; };
 		84DF7958182FF40900D90F40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84DF795A182FF40900D90F40 /* PickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerTests.m; sourceTree = "<group>"; };
+		84DF7964182FF85D00D90F40 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		84DF7966182FF8F900D90F40 /* baby1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = baby1.JPG; path = ../../../Pictures/baby1.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DF7965182FF85D00D90F40 /* MobileCoreServices.framework in Frameworks */,
 				84DF7932182FF40900D90F40 /* CoreGraphics.framework in Frameworks */,
 				84DF7934182FF40900D90F40 /* UIKit.framework in Frameworks */,
 				84DF7930182FF40900D90F40 /* Foundation.framework in Frameworks */,
@@ -101,6 +106,7 @@
 		84DF792E182FF40900D90F40 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84DF7964182FF85D00D90F40 /* MobileCoreServices.framework */,
 				84DF792F182FF40900D90F40 /* Foundation.framework */,
 				84DF7931182FF40900D90F40 /* CoreGraphics.framework */,
 				84DF7933182FF40900D90F40 /* UIKit.framework */,
@@ -126,6 +132,7 @@
 		84DF7936182FF40900D90F40 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84DF7966182FF8F900D90F40 /* baby1.JPG */,
 				84DF7937182FF40900D90F40 /* Picker-Info.plist */,
 				84DF7938182FF40900D90F40 /* InfoPlist.strings */,
 				84DF793B182FF40900D90F40 /* main.m */,
@@ -231,6 +238,7 @@
 				84DF7948182FF40900D90F40 /* Images.xcassets in Resources */,
 				84DF793A182FF40900D90F40 /* InfoPlist.strings in Resources */,
 				84DF7943182FF40900D90F40 /* Main.storyboard in Resources */,
+				84DF7967182FF8F900D90F40 /* baby1.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +389,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Picker/Picker-Prefix.pch";
 				INFOPLIST_FILE = "Picker/Picker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -394,7 +404,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Picker/Picker-Prefix.pch";
 				INFOPLIST_FILE = "Picker/Picker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +472,7 @@
 				84DF7960182FF40900D90F40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84DF7961182FF40900D90F40 /* Build configuration list for PBXNativeTarget "PickerTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +481,7 @@
 				84DF7963182FF40900D90F40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
